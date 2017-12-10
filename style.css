@@ -1,0 +1,45 @@
+body {
+	background-color: lightgrey;
+	font-family: arial;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+.head {
+	width: 100%;
+	color: orange;
+	text-align: center;
+}
+
+
+main {
+	background-color: rgb(56, 161, 140);
+	width: 100%;
+}
+
+.people {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	color: snow;
+	font-size: 16pt;	
+}
+
+.people p {
+	margin-bottom: 15px;
+}
+
+.teamtxt {
+	text-align: center;
+}
+
+.button {
+	text-decoration: none;
+	padding: 32px 16px;
+	text-align: center;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insurance calculator</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+
+	<div class="container">
+		<header>
+			<div class="head">
+				<h1>Insurance Company</h1>
+			</div>		
+		</header>
+
+		<main>
+			<div class="name">
+				<p>Your name:</p>
+				<input type="text" name="" id="name">
+			</div>	
+			<div class="age">	
+				<p>Age:</p>
+				<input type="text" name="" id="age">
+			</div>
+			<div class="country">	
+				<p>Country:</p>
+				<input type="text" name="" id="country">
+			</div>
+			<div class="hpower">	
+				<p>Horsepower:</p>
+				<input type="text" name="" id="hpower">
+			</div>	
+			<div class="button">
+			<button onclick="calculateInsurance()">calculate</button>
+			</div>
+	
+		</main>
+
+		<footer class="footer">
+			<p id="print_calculation"></p>	
+		</footer>
+	</div>	
+<script type="text/javascript">
+
+	var name = 'John Doe';
+	var age = 20;
+	var country = 'Austria';
+	var horse_power = 150;
+
+
+	function calculateInsurance() {
+		var insurance = horse_power * 100 / age + 150;
+
+		document.getElementById("print_calculation").innerHTML = "Your insurance would cost " + insurance + "€."
+
+}
+
+	
+</script>
+</body>
+</html>
